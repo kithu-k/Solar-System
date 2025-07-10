@@ -20,7 +20,7 @@ body {
     box-shadow: 0 0 60px 20px orange;
 }
 
-/* Generic orbit style */
+/* Generic orbit ring */
 [class$="orbit"] {
     position: absolute;
     top: 50%;
@@ -30,100 +30,29 @@ body {
     transform: translate(-50%, -50%);
 }
 
-
-/* Orbit sizes and planet sizes/colors */
-.mercuryorbit {
-    width: 140px;
-    height: 100px;
-}
-.mercury {
-    width: 5px;
-    height: 5px;
-    background: gray;
+/* Generic planet style */
+.mercury, .venus, .earth, .mars,
+.jupiter, .saturn, .uranus, .neptune {
     border-radius: 50%;
     position: absolute;
 }
 
-.venusorbit {
-    width: 180px;
-    height: 130px;
-}
-.venus {
-    width: 8px;
-    height: 8px;
-    background: burlywood;
-    border-radius: 50%;
-    position: absolute;
-}
+/* Orbit dimensions */
+.mercuryorbit { width: 140px; height: 100px; }
+.venusorbit   { width: 180px; height: 130px; }
+.earthorbit   { width: 230px; height: 180px; }
+.marsorbit    { width: 280px; height: 230px; }
+.jupiterorbit { width: 450px; height: 350px; }
+.saturnorbit  { width: 580px; height: 450px; }
+.uranusorbit  { width: 700px; height: 550px; }
+.neptuneorbit { width: 800px; height: 600px; }
 
-.earthorbit {
-    width: 230px;
-    height: 180px;
-}
-.earth {
-    width: 12px;
-    height: 12px;
-    background: blue;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.marsorbit {
-    width: 280px;
-    height: 230px;
-}
-.mars {
-    width: 12px;
-    height: 12px;
-    background: red;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.jupiterorbit {
-    width: 450px;
-    height: 350px;
-}
-.jupiter {
-    width: 33px;
-    height: 33px;
-    background: goldenrod;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.saturnorbit {
-    width: 580px;
-    height: 450px;
-}
-.saturn {
-    width: 30px;
-    height: 30px;
-    background: wheat;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.uranusorbit {
-    width: 700px;
-    height: 550px;
-}
-.uranus {
-    width: 20px;
-    height: 20px;
-    background: lightblue;
-    border-radius: 50%;
-    position: absolute;
-}
-
-.neptuneorbit {
-    width: 800px;
-    height: 600px;
-}
-.neptune {
-    width: 20px;
-    height: 20px;
-    background: darkblue;
-    border-radius: 50%;
-    position: absolute;
-}
+/* Planet sizes & colors */
+.mercury { width: 5px;  height: 5px;  background: gray; }
+.venus   { width: 8px;  height: 8px;  background: burlywood; }
+.earth   { width: 12px; height: 12px; background: blue; }
+.mars    { width: 12px; height: 12px; background: red; }
+.jupiter { width: 33px; height: 33px; background: goldenrod; }
+.saturn  { width: 30px; height: 30px; background: wheat; }
+.uranus  { width: 20px; height: 20px; background: lightblue; }
+.neptune { width: 20px; height: 20px; background: darkblue; }
